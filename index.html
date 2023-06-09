@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0">
+    <title>Calculator</title>
+    <link href="./styles/index.css" rel="stylesheet">
+    <script src="index.js" type="text/javascript"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@400;700&family=Rubik&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="calc-wrapper">
+        <div class="calc">
+            <div class="heading">
+                <h4>Enter Expression</h4>
+                <label class="switch">
+                    <input id="toggle-mode" type="checkbox" onchange="toggleMode()">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="screen">
+                <p id="top-expression">
+                    <!-- Expression -->
+                </p>
+                <p id="text-on-screen">
+                    <!-- Enter Expression -->
+                </p>
+            </div>
+            <div class="btns-wrapper">
+
+                <button class="calc-btn " onclick="handleClick(this)" value="AC">AC</button>
+                <button class="calc-btn" onclick="handleClick(this)" value="BS">&#8592;</button>
+                <button class="calc-btn" value="%" onclick="handleClick(this)">%</button>
+                <button class="calc-btn" value="/" onclick="handleClick(this)">/</button>
+
+                <button class="calc-btn" value="7" onclick="handleClick(this)">7</button>
+                <button class="calc-btn" value="8" onclick="handleClick(this)">8</button>
+                <button class="calc-btn" value="9" onclick="handleClick(this)">9</button>
+                <button class="calc-btn" value="*" onclick="handleClick(this)">X</button>
+
+                <button class="calc-btn" value="4" onclick="handleClick(this)">4</button>
+                <button class="calc-btn" value="5" onclick="handleClick(this)">5</button>
+                <button class="calc-btn" value="6" onclick="handleClick(this)">6</button>
+                <button class="calc-btn" value="-" onclick="handleClick(this)">-</button>
+
+                <button class="calc-btn" value="3" onclick="handleClick(this)">3</button>
+                <button class="calc-btn" value="2" onclick="handleClick(this)">2</button>
+                <button class="calc-btn" value="1" onclick="handleClick(this)">1</button>
+                <button class="calc-btn" value="+" onclick="handleClick(this)">+</button>
+
+                <button class="calc-btn zero-btn" value="0" onclick="handleClick(this)">0</button>
+                <button class="calc-btn" value="." onclick="handleClick(this)">.</button>
+                <button class="calc-btn" value="=" onclick="handleClick(this)">=</button>
+
+            </div>
+        </div>
+    </div>
+    <div class="intro-wrapper">
+        <article class="info-article">
+            <h1>A Simple Calculator</h1>
+            <h2>Built and Designed by <b style="font-size: 1.6rem;color: #0c1220;">Chetan S</b>.</h2>
+        </article>
+        <article class="contact-article">
+            <h2>If You like my work,</h2>
+            <h3>Do drop a message into my inbox</h3>
+            <div class="contact-icons">
+                <a target="_blank" href="https://twitter.com/ChetanShetter" class="contact-icon">
+                    <i class="fa fa-twitter fa-2x"></i>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/chetan_shetter/" class="contact-icon">
+                    <i class="fa fa-instagram fa-2x"></i>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/chennabasappa-g-shetter-25a5b4227/"
+                    class="contact-icon">
+                    <i class="fa fa-linkedin fa-2x"></i>
+                </a>
+                <a target="_blank" href="https://github.com/ChetanS07" class="contact-icon">
+                    <i class="fa fa-github fa-2x"></i>
+                </a>
+                <a target="_blank" href="" class="contact-icon">
+                    <i class="fa fa-youtube fa-2x"></i>
+                </a>
+            </div>
+        </article>
+
+    </div>
+</body>
+
+</html>
