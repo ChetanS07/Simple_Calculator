@@ -19,4 +19,4 @@ How To Use :
    - now you have your calculator app open.
 
 To see how Calculator Looks like,
-Website hosted. Access via link : https://chetansprojectscalculator.netlify.app/
+Website hosted. Access via link : https://csprojectscalculator.netlify.app/
